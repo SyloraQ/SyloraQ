@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Ast/SQShield.png" alt="SQShield" width="300">
+  <img src="Ast/SQ.png" alt="SQShield" width="300">
 </p>
 
 # SyloraQ:
@@ -18,6 +18,6 @@ pip install SyloraQ
 This project is licensed under the [Private Use License](LICENSE.md).
 
 ## My youtube channel:
-[GoodByeSyntax](https://www.youtube.com/@SyloraQ)
+[SyloraQ](https://www.youtube.com/@SyloraQ)
 
 **For the exe files you can check [ByteLightProject](https://github.com/GoodByeSyntax/ByteLightProject).**
