@@ -1,6 +1,6 @@
-![GBShiels](https://raw.githubusercontent.com/GoodByeSyntax/GBS/main/Ast/GBShiels.png)
+![GBShiels](https://raw.githubusercontent.com/SyloraQ/SyloraQ/main/Ast/SQ.png)
 
-pip install GoodByeSyntax
+pip install SyloraQ
 
 1. **`wait(key="s", num=1)`**: Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
 
