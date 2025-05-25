@@ -41,7 +41,7 @@ Jai: https://pypi.org/project/JynAi
 # **Platforms**
 Youtube: https://www.youtube.com/@SyloraQ
 
-Discord: https://discord.gg/RsfeV3Jw    __(When new one came we'll update!)__
+Discord: https://discord.gg/RsfeV3Jw
 
 Github: https://github.com/SyloraQ
 
@@ -49,7 +49,7 @@ Github: https://github.com/SyloraQ
 Gmail: mail sevice is coming as soon as possible!
 
 # **How Do i suggest?**
-Join https://discord.gg/RsfeV3Jw and suggest your suggestion in suggestions channel   __(When new one came we'll update!)__
+Join https://discord.gg/RsfeV3Jw and suggest your suggestion in suggestions channel
 
 # **Getting help**
 Just like Suggesting join the discord server and report the problem in help or bugs channel
