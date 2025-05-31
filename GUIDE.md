@@ -393,3 +393,9 @@ pip install SyloraQ
  164. **`Lock` (Method inside `Locker`)**: Locks the `data` based on `key` and returns it.
  
  165. **`Unlock` (Method inside `Locker`)**: Unlocks the `Ldata` with `Key` and returns it.
+
+ 166. **`alphabet_shift(text, shiftrate)`**: Shifts `text` by the amouth of `shiftrate` and returns it such as alphabet_shift("ABC",1) >>> A to B > B to C > C to D >> BCD
+
+ 167. **`wkint(script, expire=5)`**: Qaits until `expire` expire.`Use never as expire for no expire`
+
+ 168. **`countdown(from_to_0)`**: Countdowns every second and prints it until `from_to_0` reaches 0.
