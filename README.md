@@ -12,7 +12,7 @@ SyloraQ is a module that adds new functions to **python** and simplify the exist
 Click [GUIDE](GUIDE.md) to see it.
 
 # Install command:
-pip install SyloraQ
+**pip install SyloraQ**
 
 # PyPI:
 [SyloraQ PyPI](https://pypi.org/project/SyloraQ/)
@@ -28,28 +28,28 @@ This project is licensed under the [Private Use License](LICENSE.md).
 ---
 
 # **Coding**
-SQ: https://pypi.org/project/SyloraQ
+SQ: [Here](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
 
-GBS: https://pypi.org/project/GoodByeSyntax
+GBS: [Here](https://pypi.org/project/GoodByeSyntax) 
 
-BLP: https://pypi.org/project/ByteLightProject
+BLP: [Here](https://pypi.org/project/ByteLightProject) 
 
-JPM: https://pypi.org/project/JynPopMod
+JPM: [Here](https://pypi.org/project/JynPopMod) 
 
-Jai: https://pypi.org/project/JynAi
+Jai: [Here](https://pypi.org/project/JynAi)
 
 # **Platforms**
-Youtube: https://www.youtube.com/@SyloraQ
+Youtube: [Here](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
 
-Discord: https://discord.gg/RsfeV3Jw
+Discord: [Here](https://discord.gg/RsfeV3Jw)
 
-Github: https://github.com/SyloraQ
+Github: [Here](https://github.com/SyloraQ)s
 
 # **Contact**
 Gmail: mail sevice is coming as soon as possible!
 
 # **How Do i suggest?**
-Join https://discord.gg/RsfeV3Jw and suggest your suggestion in suggestions channel
+Join [Our Discord](https://discord.gg/RsfeV3Jw) and suggest your suggestion in suggestions channel
 
 # **Getting help**
 Just like Suggesting join the discord server and report the problem in help or bugs channel
