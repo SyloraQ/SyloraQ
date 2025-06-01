@@ -21,7 +21,7 @@ Click [GUIDE](GUIDE.md) to see it.
 This project is licensed under the [Private Use License](LICENSE.md).
 
 # My youtube channel:
-[SyloraQ](https://www.youtube.com/@SyloraQ)
+[SyloraQ](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
 
 **For the exe files you can check [ByteLightProject](https://github.com/GoodByeSyntax/ByteLightProject).**
 
