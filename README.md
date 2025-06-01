@@ -43,7 +43,7 @@ Youtube: [Here](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1
 
 Discord: [Here](https://discord.gg/RsfeV3Jw)
 
-Github: [Here](https://github.com/SyloraQ)s
+Github: [Here](https://github.com/SyloraQ)
 
 # **Contact**
 Gmail: mail sevice is coming as soon as possible!
