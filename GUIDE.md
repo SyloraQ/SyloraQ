@@ -2,6 +2,10 @@
 
 pip install SyloraQ
 
+//
+QChangeLog:**'Claw is massively updated.'**
+//
+
 1. **`wait(key="s", num=1)`**: Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
 
 2. **`ifnull(value, default)`**: This function checks if the given `value` is missing or empty. If it is, the function returns the provided `default` value. Otherwise, it returns the original value.
@@ -162,12 +166,15 @@ pip install SyloraQ
 
 80. **`Jusbcam(Device_Name)`**: Scans connected USB devices and checks if `Device_Name` is present in the list of detected devices.
 
-81. **`claw()`**: Claw allows you to create a custom HTTP server with extensive control over its settings. Here are the things you can customize:
-    HTML Code – Modify the webpage content as needed.
-    IP Address – Choose which IP the server runs on.
-    Port – Set the specific port for the server.
-    Subdomains – Configure custom subdomains.
-    Return Server Logs – Enable or disable server log reporting.
+81. `claw(main_html,subdomains,ip,port,logs,delete_if_inactive_for,expected_auth_token)`**: Claw allows you to create a custom HTTP server with extensive control over its settings. Here are the things you can customize:
+    **HTML Code** – Modify the main page and assign custom HTML to subdomains.
+    **Subdomains** – Add multiple subdomains dynamically, each with its own HTML content and activity tracking.
+    **IP Address** – Choose which IP the server runs on (default is `0.0.0.0`).
+    **Port** – Set the specific port for the server (default is `8000`).
+    **Return Server Logs** – Enable or disable logging of server events and API messages.
+    **Custom 404 Page** – Provide a custom HTML response for unmatched paths.
+    **Auth Token** – Secure API access with a required token via `Authorization` or `auth` header.
+    **Message API** – POST to `/api/message` with a JSON payload to send messages to the server.
 
  82. **`ConsoleCam()`**: Lets you record and return the new changes in the console for a specific part.
 
@@ -399,3 +406,4 @@ pip install SyloraQ
  167. **`wkint(script, expire=5)`**: Qaits until `expire` expire.`Use never as expire for no expire`
 
  168. **`countdown(from_to_0)`**: Countdowns every second and prints it until `from_to_0` reaches 0.
+ 
