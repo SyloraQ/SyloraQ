@@ -3,7 +3,7 @@
 pip install SyloraQ
 
 //
-QChangeLog:**'Claw is massively updated.'**
+QChangeLog:**'prn() function now prints then returns the input.'**
 //
 
 1. **`wait(key="s", num=1)`**: Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
@@ -166,7 +166,7 @@ QChangeLog:**'Claw is massively updated.'**
 
 80. **`Jusbcam(Device_Name)`**: Scans connected USB devices and checks if `Device_Name` is present in the list of detected devices.
 
-81. `claw(main_html,subdomains,ip,port,logs,delete_if_inactive_for,expected_auth_token)`**: Claw allows you to create a custom HTTP server with extensive control over its settings. Here are the things you can customize:
+81. `claw()`**: Claw allows you to create a custom HTTP server with extensive control over its settings. Here are the things you can customize:
     **HTML Code** – Modify the main page and assign custom HTML to subdomains.
     **Subdomains** – Add multiple subdomains dynamically, each with its own HTML content and activity tracking.
     **IP Address** – Choose which IP the server runs on (default is `0.0.0.0`).
@@ -407,3 +407,8 @@ QChangeLog:**'Claw is massively updated.'**
 
  168. **`countdown(from_to_0)`**: Countdowns every second and prints it until `from_to_0` reaches 0.
  
+ 169. **`inviShade`**: A class that a turns any input into a single character and another that decodes it back to the full original message.
+
+ 170. **`encode` (Method inside `inviShade`)**: Encodes input text to 1 single invisible char..
+
+ 171. **`decode` (Method inside `inviShade`)**: Reverses encoding.
