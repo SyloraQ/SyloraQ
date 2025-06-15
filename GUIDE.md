@@ -3,8 +3,18 @@
 pip install SyloraQ
 
 //
-QChangeLog:**'prn() function now prints then returns the input.'**
+QChangeLog:**'Added Quasar and security folder.'**
 //
+
+if a function or class have this (🛡️) symbol u have to import it through:
+     from SyloraQ.security import function/class
+else:
+     from SyloraQ import *
+
+🛡️i: inside function or class of 🛡️'s.
+🛡️i+: Inside function or class of 🛡️i's.
+"i" count will extend based on insides.
+
 
 1. **`wait(key="s", num=1)`**: Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
 
@@ -395,11 +405,11 @@ QChangeLog:**'prn() function now prints then returns the input.'**
 
  162. **`runwithin(code,call,params)`**: Runs the `code` calling `class > function() or class.function()` with the `params` placed in such as runwithin(code,func(params go in here when executed dont add params here!) or class.func(params go in here when executed dont add params here!),params). 
 
- 163. **`Locker`**: A class that can lock or unlock a string based on key.(Numbers isn't supported)
+ 163. 🛡️ **`Locker`**: A class that can lock or unlock a string based on key.(Numbers isn't supported)
  
- 164. **`Lock` (Method inside `Locker`)**: Locks the `data` based on `key` and returns it.
+ 164. 🛡️i **`Lock` (Method inside `Locker`)**: Locks the `data` based on `key` and returns it.
  
- 165. **`Unlock` (Method inside `Locker`)**: Unlocks the `Ldata` with `Key` and returns it.
+ 165. 🛡️i **`Unlock` (Method inside `Locker`)**: Unlocks the `Ldata` with `Key` and returns it.
 
  166. **`alphabet_shift(text, shiftrate)`**: Shifts `text` by the amouth of `shiftrate` and returns it such as alphabet_shift("ABC",1) >>> A to B > B to C > C to D >> BCD
 
@@ -407,8 +417,16 @@ QChangeLog:**'prn() function now prints then returns the input.'**
 
  168. **`countdown(from_to_0)`**: Countdowns every second and prints it until `from_to_0` reaches 0.
  
- 169. **`inviShade`**: A class that a turns any input into a single character and another that decodes it back to the full original message.
+ 169. **`inviShade`**: A class that a turns any input into a single invisible character and another that decodes it back to the full original message.
 
- 170. **`encode` (Method inside `inviShade`)**: Encodes input text to 1 single invisible char..
+ 170. **`encode` (Method inside `inviShade`)**: Encodes input text to 1 single invisible char.
 
  171. **`decode` (Method inside `inviShade`)**: Reverses encoding.
+
+ 172. **`boa(string,option,pin)`**: Returns `option` from the `pin` in `string`. boa("Hello//abc",b or before,"//") out:Hello because Hello comes before // and if after then out:abc because abc comes after //
+
+ 173. 🛡️ **`Quasar`**: A class that a turns any input into a single invisible character and another that decodes it back to the full original message.
+
+ 174. 🛡️i **`encode` (Method inside `Quasar`)**: Encrypts input.
+
+ 175. 🛡️i **`decode` (Method inside `Quasar`)**: Reverses encrypting.
