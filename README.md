@@ -2,54 +2,77 @@
   <img src="Ast/SQ.png" alt="SQShield" width="300">
 </p>
 
-# Who is SyloraQ?:
-SyloraQ is owner of the GBS BLP JPM and some other projects!
+# Who is SyloraQ?
 
-# SyloraQ:
-SyloraQ is a module that adds new functions to **python** and simplify the existing ones...
+> SyloraQ is owner of the GBS, BLP, JPM, and some other projects!
 
-# Guide:
-Click [GUIDE](GUIDE.md) to see it.
+## SyloraQ Module
 
-# Install command:
-**pip install SyloraQ**
-
-# PyPI:
-[SyloraQ PyPI](https://pypi.org/project/SyloraQ/)
-
-# License:
-This project is licensed under the [Private Use License](LICENSE.md).
-
-# My youtube channel:
-[SyloraQ](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
-
-**For the exe files you can check [ByteLightProject](https://github.com/GoodByeSyntax/ByteLightProject).**
+> SyloraQ is a module that adds new functions to **Python** and simplifies the existing ones...
 
 ---
 
-# **Coding**
-SQ: [Here](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
+### Guide
 
-GBS: [Here](https://pypi.org/project/GoodByeSyntax) 
+* Click [GUIDE](GUIDE.md) to see it.
 
-BLP: [Here](https://pypi.org/project/ByteLightProject) 
+### Install Command
 
-JPM: [Here](https://pypi.org/project/JynPopMod) 
+```bash
+pip install SyloraQ
+```
 
-Jai: [Here](https://pypi.org/project/JynAi)
+### PyPI
 
-# **Platforms**
-Youtube: [Here](youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
+* Visit the [SyloraQ PyPI page](https://pypi.org/project/SyloraQ/).
 
-Discord: [Here]([https://discord.gg/RsfeV3Jw](https://discord.gg/UMYJrp2B))
+### License
 
-Github: [Here](https://github.com/SyloraQ)
+* This project is licensed under the [Private Use License](LICENSE.md).
 
-# **Contact**
-Gmail: mail sevice is coming as soon as possible!
+### My YouTube Channel
 
-# **How Do i suggest?**
-Join [Our Discord]([https://discord.gg/RsfeV3Jw](https://discord.gg/UMYJrp2B)) and suggest your suggestion in suggestions channel
+* [SyloraQ YouTube](https://youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
 
-# **Getting help**
-Just like Suggesting join the discord server and report the problem in help or bugs channel
+---
+
+> **For the exe files you can check:**
+> [ByteLightProject on GitHub](https://github.com/GoodByeSyntax/ByteLightProject)
+
+---
+
+# Coding Projects
+
+1. **SQ:** [YouTube Channel](https://youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
+2. **GBS:** [PyPI](https://pypi.org/project/GoodByeSyntax)
+3. **BLP:** [PyPI](https://pypi.org/project/ByteLightProject)
+4. **JPM:** [PyPI](https://pypi.org/project/JynPopMod)
+5. **Jai:** [PyPI](https://pypi.org/project/JynAi)
+
+---
+
+# Platforms
+
+* **YouTube:** [Here](https://youtube.com/channel/UCOvDKDUeQXqxkit2_mngZDQ/?sub_confirmation=1)
+* **Discord:** [Join Here](https://discord.gg/UMYJrp2B)
+* **GitHub:** [Here](https://github.com/SyloraQ)
+
+---
+
+# Contact
+
+> Gmail service is coming as soon as possible!
+
+---
+
+# How Do I Suggest?
+
+* Join [Our Discord](https://discord.gg/UMYJrp2B)
+* Suggest your ideas in the **suggestions** channel
+
+---
+
+# Getting Help
+
+* Join the Discord server
+* Report problems in the **help** or **bugs** channels
