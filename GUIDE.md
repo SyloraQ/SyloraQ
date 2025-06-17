@@ -1,3 +1,10 @@
+>>pip install SyloraQ
+>>>Run this so u can use the library. 
+
+```bash
+pip install SyloraQ
+```
+
 ### Note on imports and the 🛡️ symbol:
 
 > If a function or class has the (🛡️) symbol:  
