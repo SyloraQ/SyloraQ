@@ -3,7 +3,7 @@
 pip install SyloraQ
 
 //
-QChangeLog:**'Added Quasar and security folder.'**
+QChangeLog:**'Added much functions.'**
 //
 
 if a function or class have this (🛡️) symbol u have to import it through:
@@ -430,3 +430,68 @@ else:
  174. 🛡️i **`encode` (Method inside `Quasar`)**: Encrypts input.
 
  175. 🛡️i **`decode` (Method inside `Quasar`)**: Reverses encrypting.
+
+ 176. **`@time_limited_cache(seconds)`**: Basically `memorize()` function but caches for `seconds` period of time.
+
+ 177. **`GlowShell`**: A utility class that provides styled printing, cursor control, and animated frame playback in the terminal.
+
+ 178. **`print(message, fg=None, bg=None, bold=False, underline=False, dim=False, bright=False, blink=False, end="\n")` (Method inside `GlowShell`)**: Prints the `message` with given color and style settings. Automatically resets the style after printing.
+
+ 179. **`clear()` (Method inside `GlowShell`)**: Clears the entire terminal screen and moves the cursor to the top-left corner.
+
+ 180. **`clear_line()` (Method inside `GlowShell`)**: Clears the current line only, leaving the rest of the terminal untouched.
+
+ 181. **`move_cursor(row, col)` (Method inside `GlowShell`)**: Moves the terminal cursor to the specified `row` and `column`.
+
+ 182. **`hide_cursor()` (Method inside `GlowShell`)**: Hides the blinking terminal cursor until shown again.
+
+ 183. **`show_cursor()` (Method inside `GlowShell`)**: Shows the terminal cursor if it was previously hidden.
+
+ 184. **`test()` (Method inside `GlowShell`)**: Demonstrates usage of styles, colors, cursor movement, and clearing capabilities. Useful for checking terminal support.
+
+ 185. **`animate_frames(frames, ...)` (Method inside `GlowShell`)**: Animates multiple ASCII frames with individual styles.
+     This function displays a sequence of multi-line text frames (like ASCII art) in the terminal, one after the other, with optional looping and formatting like color, bold, delay, etc.
+
+     #### How It Works:
+
+     - Takes a list of text frames.
+     - Displays each frame with a delay between them.
+     - You can globally set styles like color, bold, underline, etc.
+     - **Optionally**, each frame can override the global settings by using a **special header line**.
+
+     #### Frame Styling Format:
+
+     Each frame can begin with a custom header line formatted exactly as:
+          --/key:value,key:value,.../--
+
+     - This header line **must be the first line** of the frame.
+     - The header is automatically removed before displaying the frame.
+     - Only the specified keys in the header affect that frame.
+     - Frames without this header use the global style parameters passed to `animate_frames`.
+
+     #### Supported Keys:
+
+     --------------------------------------------------------------------------------------------------------------------------------
+     |    Key    |       Description        |                                   Values                                              |
+     |-----------|--------------------------|---------------------------------------------------------------------------------------|
+     | `fg`      | Foreground (text) color  | `"black"`, `"red"`, `"green"`, `"yellow"`, `"blue"`, `"magenta"`, `"cyan"`, `"white"` |
+     | `bg`      | Background color         | Same as `fg` colors                                                                   |
+     | `bold`    | Bold text                | `true` or `false`                                                                     |
+     | `dim`     | Dim text                 | `true` or `false`                                                                     |
+     |`underline`| Underline text           | `true` or `false`                                                                     |
+     | `bright`  | Bright color variation   | `true` or `false`                                                                     |
+     | `blink`   | Blinking text            | `true` or `false`                                                                     |
+     | `delay`   | Delay time for this frame| Any positive number like `0.3`, `1`, etc.  (Seconds)                                  |
+     --------------------------------------------------------------------------------------------------------------------------------
+
+     #### Example Frame List:
+
+     ```python
+     frames = [
+     "--/fg:green,bold:true,delay:1/--\nThis is a green bold frame.",
+     "--/fg:yellow,dim:true,delay:0.5/--\nNow it's dim and yellow.",
+     "--/fg:red,bg:white,blink:true,delay:0.3/--\nRed on white and blinking."
+     ]
+     ```
+
+186. **`@lazy_property`**: A property decorator that computes a value once on first access and caches it for later use.
