@@ -8,11 +8,18 @@ pip install SyloraQ
 ### Note on imports and the 🛡️ symbol:
 
 > If a function or class has the (🛡️) symbol:  
->> Import it via `from SyloraQ.security import function_or_class`  
+>> Import it with `from SyloraQ.security import function_or_class`  
 > Otherwise:  
->> Import via `from SyloraQ import *`
+>> Import with `from SyloraQ import *`
 
 The nested symbols like 🛡️i or 🛡️i+ indicate layers of insideness (inside functions/classes of 🛡️ items), extending as needed.
+
+### Note on imports and the 🌐 symbol:
+
+> If a function or class has the (🌐) symbol:  
+>> Import it with `from SyloraQ.web import function_or_class`
+
+The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside functions/classes of 🛡️ items), extending as needed.
 
 > **`wait(key="s", num=1)`**  
 >> Pauses execution for a specified amount of time. The unit is controlled by the `key` parameter, which can be 's' for seconds, 'm' for minutes, or 'h' for hours.
@@ -597,3 +604,130 @@ The nested symbols like 🛡️i or 🛡️i+ indicate layers of insideness (ins
 
 > 186. `@lazy_property` 
 >> A property decorator that computes a value once on first access and caches it for later use.
+
+> 187. 🌐 `BrowSentinel(headless=True, port=9222)`  
+>> High-level browser controller class that manages a headless Chrome instance with remote debugging enabled on the specified port. Provides methods to control browsing, page navigation, interaction, and automation.
+
+> 188. 🌐i `start()` (Method inside `BrowSentinel`)  
+>> Launches Chrome with remote debugging enabled, connects to the first available browser page, and enables key domains (`Page`, `DOM`, and `Network`) to prepare for interaction.
+
+> 189. 🌐i `navigate(url)` (Method inside `BrowSentinel`)  
+>> Navigates the browser to the specified URL. Returns a response including frame and loader identifiers.
+
+> 190. 🌐 `reload()` (Method inside `BrowSentinel`)  
+>> Reloads the current page.
+
+> 191. 🌐 `back()` (Method inside `BrowSentinel`)  
+>> Navigates back in the browser history by retrieving the navigation history and navigating to the previous entry.
+
+> 192. 🌐 `forward()` (Method inside `BrowSentinel`)  
+>> Navigates forward in the browser history similarly by using navigation history.
+
+> 193. 🌐 `set_viewport(width, height, deviceScaleFactor=1)` (Method inside `BrowSentinel`)  
+>> Overrides the viewport size and device scale factor to emulate different screen sizes and pixel densities.
+
+> 194. 🌐 `evaluate(script)` (Method inside `BrowSentinel`)  
+>> Executes JavaScript code within the current page context and returns the result value.
+
+> 195. 🌐 `get_html()` (Method inside `BrowSentinel`)  
+>> Retrieves the full HTML markup of the current page.
+
+> 196. 🌐 `get_text()` (Method inside `BrowSentinel`)  
+>> Retrieves the visible text content of the page (equivalent to `document.body.innerText`).
+
+> 197. 🌐 `click(selector)` (Method inside `BrowSentinel`)  
+>> Simulates a mouse click on the first element matched by the given CSS selector.
+
+> 198. 🌐 `type(selector, text)` (Method inside `BrowSentinel`)  
+>> Sets the value of the input element matched by the selector and dispatches an input event, simulating user typing.
+
+> 199. 🌐 `wait_for(selector, timeout=5)` (Method inside `BrowSentinel`)  
+>> Waits asynchronously until an element matching the selector appears on the page or the timeout is reached.
+
+> 200. 🌐 `screenshot(path="page.png")` (Method inside `BrowSentinel`)  
+>> Captures a screenshot of the current page and saves it as a PNG file at the specified path.
+
+> 201. 🌐 `close()` (Method inside `BrowSentinel`)  
+>> Closes the browser session and terminates the Chrome process cleanly.
+
+>>    The `BrowSentinel` class provides a minimal yet robust interface for controlling a headless Chrome browser via Chrome DevTools Protocol. It enables navigation, DOM interaction, scripting, viewport control, and screenshot capture all without external dependencies beyond Python’s standard library and a local Chrome installation.
+
+>>    Typical workflow:
+
+>>>    1. Instantiate the browser object: `Browser = BrowSentinel()`
+>>>    2. Start the browser and connect: `browser.start()`
+>>>    3. Navigate pages, interact with elements, evaluate (run JavaScript in the page), capture screenshots or extract page data
+>>>    4. Close when done: `browser.close()`
+
+>>>    Try out this:
+>>>
+    ```python
+    t2s="""
+    function replaceTextWithSyloraQ() {
+    const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+    );
+
+    let node;
+    while (node = walker.nextNode()) {
+        if (node.nodeValue.trim() !== "") {
+        node.nodeValue = "SyloraQ";
+        }
+    }
+    }
+
+    replaceTextWithSyloraQ();
+    """
+
+    if __name__ == "__main__":
+        b = BrowSentinel()
+        print("Starting browser...")
+        b.start()
+        b.navigate("https://example.com")
+        
+        
+        b.screenshot()
+        inp=len(input("Please Check the file then delete it before pressing enter>"))
+        if inp-inp==0:
+            b.evaluate(t2s)
+            b.screenshot()
+            b.close
+    ```
+
+> 202. `api(port)` (Works with `@endpoint()`)  
+>> Creates an api server
+
+> 203. `@endpoint(name)` (Works with `api()`)  
+>> Adds and endpoint to the api server.
+>>> Try out this:
+    ```python
+    import time
+    def run_api(port=8381):
+        @endpoint("hello")
+        def hello_endpoint(body, headers):
+            name = body.get("input") if isinstance(body, dict) else None
+            if headers.get("Token") == "YourToken":
+                return {"message": f"Hello, {name}!"}
+            else:
+                return {"error": "Sorry, invalid token"}
+
+        api(port=port)
+
+        print(f"API server running on port {port} with endpoint '/api/hello'")
+        try:
+            while True:time.sleep(10000000)
+        except KeyboardInterrupt:
+            print("Server stopped.")
+
+    run_api(8381)
+    ```
+>>> Then run on ur cmd:
+    ```bash
+    curl -X POST http://localhost:8381/api/hello ^
+        -H "Content-Type: application/json" ^
+        -H "Token: my-secret-token" ^
+        -d "{\"input\":\"Alice\"}"
+    ```
