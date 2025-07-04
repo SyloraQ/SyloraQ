@@ -731,3 +731,52 @@ The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside fu
         -H "Token: my-secret-token" ^
         -d "{\"input\":\"Alice\"}"
     ```
+
+> 204. `NLDurationParser(seconds: int, full=False)`
+>> Converts a number of seconds into a human-readable duration string, choosing the largest suitable unit (seconds, minutes, hours, days, or years).
+>> When `full` is `True`, uses full unit names; otherwise, uses abbreviations.
+
+> 205. `justify(words, max_width)`
+>> Formats a list of words into fully justified lines of a given width.
+>> Distributes spaces evenly between words, padding the last line with spaces on the right.
+
+> 206. `draw_tree(path, prefix="")`
+>> Recursively prints a visual tree of directories and files starting from a specified path.
+>> Uses branch and indent symbols to represent file system hierarchy.
+
+> 207. `@prefix(pfx)`
+>> A decorator that scans command-line arguments and calls the decorated function with arguments matching a specific prefix (with the prefix removed).
+
+> 208. `SQS(path)`
+>> A configuration file manager supporting global keys and named sections.
+>> Loads, reads, writes, deletes, toggles, and saves config values, parsing expressions and inline comments.
+
+> 209. `read(key, default=None, section=None)` (Method inside `SQS`)
+>> Retrieves a stored value from the specified section or global scope, returning a default if key is missing.
+
+> 210. `write(text)` (Method inside `SQS`)
+>> Parses and processes multiple lines of config expressions from a text block, updating internal state.
+
+> 211. `delete(key, section=None)` (Method inside `SQS`)
+>> Removes a key from a given section or the global config if no section specified.
+
+> 212. `has_key(key, section=None)` (Method inside `SQS`)
+>> Checks existence of a key in a section or globally.
+
+> 213. `save()` (Method inside `SQS`)
+>> Writes current global keys and all sections with their keys back to the config file, preserving format.
+
+> 214. `reload()` (Method inside `SQS`)
+>> Clears internal data and reloads configuration from the file.
+
+> 215.  `to_dict()` (Method inside `SQS`)
+>> Returns the entire configuration as a nested dictionary with globals and sections.
+
+> 216.  `PYCify`
+>> Utility class for compiling Python source files into bytecode and loading compiled modules dynamically.
+
+> 217. `compile(source_path, pyc_path=None)` (Method inside `PYCify`)
+>> Reads a Python source file, compiles it into bytecode, writes the `.pyc` file with correct header info (magic number, timestamp).
+
+> 218. `load(pyc_path, module_name)` (Method inside `PYCify`)
+>> Loads a compiled `.pyc` file as a Python module by name, enabling dynamic imports from bytecode.
