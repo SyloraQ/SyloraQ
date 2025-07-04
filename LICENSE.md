@@ -1,45 +1,90 @@
-   **What Users Can Do**:
-1. **Use for Personal and Non-Commercial Purposes:**  
-   Users can download and use the Software for personal projects, non-commercial projects, or educational purposes, as long as it's not for profit or commercial gain.
-
-2. **Incorporate into Larger Projects:**  
-   Users can include the Software in larger projects, either public or private, but **with proper attribution** (e.g., crediting the original author, "SyloraQ").
-
-3. **Modify for Personal Use:**  
-   Users can modify the Software for their own use within a larger project, as long as any modifications are clearly documented (e.g., note which parts were changed).
-
-4. **Publicly Distribute:**  
-   Users can distribute their projects that use the Software publicly, but **U must provide proper attribution** to the original author and include the required notice ("This project includes software developed by [SyloraQ], © 2025...").
+# SyloraQ Software License Agreement (2025)
 
 ---
 
-   **What Users Can't Do:**
-1. **Commercial Use Without Permission:**  
-   Users cannot use the Software for commercial purposes (e.g., selling it, using it in a product sold for profit) without any **consent** from the Licensor.
+## What You Can Do
 
-2. **Resell or Sublicense the Software:**  
-   Users cannot sell, lease, or sublicense the Software as a standalone product. The Software cannot be distributed as-is for a fee or bundled with another product for resale.
+1. **Personal and Non-Commercial Use**  
+   You may download and use the Software for personal projects, educational purposes, or any non-commercial activity.
 
-3. **Alter or Copy the Original Software (or parts of it) Without Permission:**  
-   Users cannot modify the core form of the Software and then redistribute it as part of their project, unless U clearly state any changes made. Copying portions of the Software for redistribution or use in other projects **without the necessary modifications** is prohibited.
+2. **Inclusion in Projects**  
+   You may incorporate the Software into your projects, whether public or private, provided you give proper credit to **“SyloraQ.”**
 
-4. **Failing to Give Proper Attribution:**  
-   If a user integrates the Software into any project that is shared or published, U must ensure the correct **attribution** notice is visible and readable, as specified in the agreement.
+3. **Modifications for Personal Use**  
+   You are allowed to modify the Software for your own use. If you share a modified version publicly, please clearly indicate what changes you made to avoid confusion.
 
----
-
-   **How U Can Use the Software:**
-**1. Permission for Commercial Use or Profit**  
-If you want to use the Software for **commercial purposes** (e.g., selling a product that includes it or using it in a business), you **must get permission** from the Licensor.  
-
-Alternatively, you can use the Software commercially **without prior permission** if you **credit "SyloraQ" properly** by:  
-- Displaying the **SyloraQ logo** in your commercial content.  
-- Ensuring the logo appears **clearly** in the video for **at least 3 seconds** in **HD quality** and is **easily visible** (not hidden or covered).
-or
-- Creditting it in the description.
+4. **Public Distribution**  
+   You may distribute projects that include the Software, as long as you include proper attribution to the original author (e.g., a notice like “This project includes software developed by SyloraQ, © 2025”).
 
 ---
 
-By using this software you consider agreed to license.
+## What You Cannot Do
 
-© 2025 [SyloraQ]
+1. **Commercial Use Without Permission**  
+   You may not use the Software for commercial purposes (e.g., selling a product that includes it) without permission from SyloraQ or unless you follow the commercial attribution requirements below.
+
+2. **Resell or Sublicense as Standalone**  
+   You may not sell, lease, or sublicense the Software as a standalone product or redistribute it “as-is” for a fee.
+
+3. **Redistribute Without Attribution**  
+   You must not distribute the Software or any project including it without giving proper credit to SyloraQ.
+
+---
+
+## Commercial Use Terms
+
+If you want to use the Software commercially (for profit), you have two options:
+
+- **Option 1:** Obtain explicit permission from SyloraQ before use.
+
+- **Option 2:** Use the Software commercially *with proper attribution* by including a clear credit such as:  
+  - Displaying “Powered by SyloraQ” or “Includes software by SyloraQ © 2025” visibly in your product, website, or documentation.
+
+---
+
+## Attribution Guidelines
+
+Attribution must be clear and reasonably visible. Suggested formats include:
+
+- A credits section in your documentation or "About" screen.  
+- A footer on your website or product page.  
+- A visible logo or text that reads “Powered by SyloraQ” or “Includes software by SyloraQ © 2025.”
+
+---
+
+## Disclaimer of Warranty
+
+The Software is provided "as is," without any warranty of any kind, express or implied. SyloraQ is not responsible for any damages or losses arising from the use or inability to use this Software.
+
+---
+
+## Termination
+
+Your rights under this license will terminate automatically if you fail to comply with any of the terms. Upon termination, you must cease all use and distribution of the Software.
+
+---
+
+## Governing Law
+
+This Agreement shall be governed by applicable international laws and treaties.  
+In case of any disputes, parties agree to seek amicable resolution through negotiation or mediation before pursuing legal action.
+
+---
+
+## Contributions and Feedback
+
+Contributions such as bug fixes, improvements, or suggestions are welcome. By submitting contributions, you grant SyloraQ a license to use, modify, and distribute those contributions.
+
+---
+
+## Support and Updates
+
+SyloraQ is not obligated to provide support, updates, or maintenance for the Software. Any updates provided are subject to the same license terms.
+
+---
+
+## Agreement
+
+By using this Software, you agree to comply with these terms.
+
+© 2025 SyloraQ
