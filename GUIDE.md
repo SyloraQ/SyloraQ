@@ -697,10 +697,10 @@ The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside fu
             b.close
     ```
 
-> 202. `api(port)` (Works with `@endpoint()`)  
+> 🌐 `api(port)` (Works with `@endpoint()`)  
 >> Creates an api server
 
-> 203. `@endpoint(name)` (Works with `api()`)  
+> 🌐 `@endpoint(name)` (Works with `api()`)  
 >> Adds and endpoint to the api server.
 >>> Try out this:
     ```python
@@ -732,51 +732,168 @@ The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside fu
         -d "{\"input\":\"Alice\"}"
     ```
 
-> 204. `NLDurationParser(seconds: int, full=False)`
+> `stick_overlay(tk_win, process_name="Notepad.exe", x_offset=20, y_offset=60, interval=30)`  
+>> Creates a dynamic overlay window that tracks the position of the main window of a given process by name, updating the overlay’s position in real-time.
+
+> `similarity(sentence1, sentence2, drama_mode=False)`  
+>> Calculates a similarity score between two sentences.
+
+> **`class Jsonify`**  
+>> A utility class for advanced JSON manipulation. Supports conversion from strings/files, deep access and modification, merging, validation, searching, and exporting.  
+>>
+>>> `from_string(json_string)`  
+>>>> Parses a JSON string into a `Jsonify` object using `json.loads()`.
+
+>>> `frs(string)`  
+>>>> Parses loose or malformed string in the form `"key1:val1,key2:val2"` into a `Jsonify` object.
+
+>>> `from_file(filepath)`  
+>>>> Loads JSON from a file and returns a `Jsonify` instance.
+
+>>> `to_string(pretty=False)`  
+>>>> Converts the internal JSON data back into a string. If `pretty=True`, outputs formatted JSON.
+
+>>> `to_file(filepath, pretty=False)`  
+>>>> Saves the internal JSON to a file. Supports pretty formatting.
+
+>>> `get(key, default=None)`  
+>>>> Gets value by dot notation key (`"a.b.c"` or `"a.0.b"` for lists). Returns `default` if not found.
+
+>>> `set(key, value)`  
+>>>> Sets value by dot notation key. Creates nested structures if necessary.
+
+>>> `remove(key)`  
+>>>> Removes value by dot notation key. Returns `True` if removed, else `False`.
+
+>>> `merge(other)`  
+>>>> Deep-merges another `dict` or `Jsonify` into the current data. Keys are recursively updated.
+
+>>> `search(pattern, search_keys=True, search_values=True)`  
+>>>> Regex-based search over keys and/or string values. Returns list of matching dot notation paths.
+
+>>> `validate_keys(required_keys)`  
+>>>> Ensures all given dot-notation keys exist in data. Returns `True` if all exist.
+
+>>> `copy()`  
+>>>> Returns a deep copy of the current `Jsonify` instance.
+
+>>> `clear()`  
+>>>> Clears the internal data (dict or list). If another type, resets to empty dict.
+
+> **`class Textify`**  
+>> A utility class for applying functions over characters, words, groups, or sentences in a text.
+>>
+>>> `for_every_char(do)`  
+>>>> Applies function `do(char)` to every character in the text.
+
+>>> `for_every_word(do)`  
+>>>> Applies function `do(word)` to every word in the text (split by whitespace).
+
+>>> `for_every_group(n, do)`  
+>>>> Applies function `do(group)` to each substring group of size `n`.
+
+>>> `for_every_sentence(do)`  
+>>>> Applies function `do(sentence)` to each sentence (split using punctuation and space).
+
+>>> `result()`  
+>>>> Returns the processed text.
+
+> **`def exists(string, pin)`**  
+>> Checks if `pin` exists within `string`.  
+>>> Returns `True` if found, else `False`.
+
+> 🌐 **`UrlValidate(url)`**  
+>> Validates a URL. (The url must be published on internet!)
+
+> **`def Shut()`**  
+>> Suppresses all standard output, error, and logging temporarily.  
+>>> Returns a tuple of original output/logging states for restoration.
+
+> **`def UnShut(origins)`**  
+>> Restores original stdout, stderr, print, and logging.  
+>>> `origins` should be the tuple returned by `Shut()`.
+
+> **`class ZypherTrail`**  
+>> Encodes and decodes text using a vertical zigzag (rail fence-like) cipher.
+
+>>> **`encode(string, max_row=5)`**  
+>>>> Encodes text in a zigzag pattern up to `max_row`. Returns a multi-line string.
+
+>>> **`decode(encoded_str)`**  
+>>>> Decodes the zigzag-encoded string back to its original form.
+
+> **`NLDurationParser(seconds: int, full=False)`**
 >> Converts a number of seconds into a human-readable duration string, choosing the largest suitable unit (seconds, minutes, hours, days, or years).
 >> When `full` is `True`, uses full unit names; otherwise, uses abbreviations.
 
-> 205. `justify(words, max_width)`
+> **`justify(words, max_width)`**
 >> Formats a list of words into fully justified lines of a given width.
 >> Distributes spaces evenly between words, padding the last line with spaces on the right.
 
-> 206. `draw_tree(path, prefix="")`
+> **`draw_tree(path, prefix="")`**
 >> Recursively prints a visual tree of directories and files starting from a specified path.
 >> Uses branch and indent symbols to represent file system hierarchy.
 
-> 207. `@prefix(pfx)`
+> **`@prefix(pfx)`**
 >> A decorator that scans command-line arguments and calls the decorated function with arguments matching a specific prefix (with the prefix removed).
 
-> 208. `SQS(path)`
+> **`SQS(path)`**
 >> A configuration file manager supporting global keys and named sections.
 >> Loads, reads, writes, deletes, toggles, and saves config values, parsing expressions and inline comments.
+```sqs
+#This is a comment!
 
-> 209. `read(key, default=None, section=None)` (Method inside `SQS`)
+# Global variables
+debug = true
+max_retries = 5
+pi_value = 3.14159
+
+# Section with variables
+[network]
+host = "localhost"
+port = 8080
+
+# Conditional assignment
+if max_retries >= 3 then retry_mode = "aggressive"
+
+# Toggle a boolean
+toggle debug
+
+# Arithmetic operation
+max_retries += 2
+
+# Copy value from one key to another
+set retry_count to max_retries
+
+# etc.
+```
+
+> **`read(key, default=None, section=None)`** (Method inside `SQS`)
 >> Retrieves a stored value from the specified section or global scope, returning a default if key is missing.
 
-> 210. `write(text)` (Method inside `SQS`)
+> **`write(text)` (Method inside `SQS`)**
 >> Parses and processes multiple lines of config expressions from a text block, updating internal state.
 
-> 211. `delete(key, section=None)` (Method inside `SQS`)
+> **`delete(key, section=None)` (Method inside `SQS`)**
 >> Removes a key from a given section or the global config if no section specified.
 
-> 212. `has_key(key, section=None)` (Method inside `SQS`)
+> **`has_key(key, section=None)` (Method inside `SQS`)**
 >> Checks existence of a key in a section or globally.
 
-> 213. `save()` (Method inside `SQS`)
+> **`save()` (Method inside `SQS`)**
 >> Writes current global keys and all sections with their keys back to the config file, preserving format.
 
-> 214. `reload()` (Method inside `SQS`)
+> **`reload()` (Method inside `SQS`)**
 >> Clears internal data and reloads configuration from the file.
 
-> 215.  `to_dict()` (Method inside `SQS`)
+>  **`to_dict()`** (Method inside `SQS`)**
 >> Returns the entire configuration as a nested dictionary with globals and sections.
 
-> 216.  `PYCify`
+>  **`PYCify`**
 >> Utility class for compiling Python source files into bytecode and loading compiled modules dynamically.
 
-> 217. `compile(source_path, pyc_path=None)` (Method inside `PYCify`)
+> **`compile(source_path, pyc_path=None)`** (Method inside `PYCify`)
 >> Reads a Python source file, compiles it into bytecode, writes the `.pyc` file with correct header info (magic number, timestamp).
 
-> 218. `load(pyc_path, module_name)` (Method inside `PYCify`)
+> **`load(pyc_path, module_name)`** (Method inside `PYCify`)
 >> Loads a compiled `.pyc` file as a Python module by name, enabling dynamic imports from bytecode.
