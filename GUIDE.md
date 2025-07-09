@@ -868,7 +868,7 @@ set retry_count to max_retries
 # etc.
 ```
 
-> **`read(key, default=None, section=None)`** (Method inside `SQS`)
+> **`read(key, default=None, section=None)` (Method inside `SQS`)**
 >> Retrieves a stored value from the specified section or global scope, returning a default if key is missing.
 
 > **`write(text)` (Method inside `SQS`)**
@@ -886,14 +886,18 @@ set retry_count to max_retries
 > **`reload()` (Method inside `SQS`)**
 >> Clears internal data and reloads configuration from the file.
 
->  **`to_dict()`** (Method inside `SQS`)**
+>  **`to_dict()` (Method inside `SQS`)**
 >> Returns the entire configuration as a nested dictionary with globals and sections.
 
 >  **`PYCify`**
 >> Utility class for compiling Python source files into bytecode and loading compiled modules dynamically.
 
-> **`compile(source_path, pyc_path=None)`** (Method inside `PYCify`)
+> **`compile(source_path, pyc_path=None)` (Method inside `PYCify`)**
 >> Reads a Python source file, compiles it into bytecode, writes the `.pyc` file with correct header info (magic number, timestamp).
 
-> **`load(pyc_path, module_name)`** (Method inside `PYCify`)
+> **`load(pyc_path, module_name)` (Method inside `PYCify`)**
 >> Loads a compiled `.pyc` file as a Python module by name, enabling dynamic imports from bytecode.
+
+> **`tts(text,gender)`**
+>> Plays the audio of a `gender (male/female)` saying `text`.
+>> This is a basic `text to speech` so dont expect very much from it. `;)`
