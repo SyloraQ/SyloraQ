@@ -1,6 +1,14 @@
-[!WARNING]
-> Your use of this Software in any form constitutes your acceptance of this Agreement.
+---
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ❗ 𝗜𝗠𝗣𝗢𝗥𝗧𝗔𝗡𝗧 𝗡𝗢𝗧𝗜𝗖𝗘
+
+**Your use of this Software in any form constitutes your acceptance of this Agreement.**
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
 
 >>pip install SyloraQ
 >>>Run this so u can use the library. 
