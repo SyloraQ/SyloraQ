@@ -1,13 +1,7 @@
-<span style="
-  color: #00ffff;
-  text-shadow:
-    0 0 5px #00ffff,
-    0 0 10px #00ffff,
-    0 0 20px #00ffff;
-  font-weight: bold;
-">
+<span style="color:#00ffff; font-weight:bold; text-shadow: 0 0 5px #00ffff;">
 Your use of this Software in any form constitutes your acceptance of this Agreement.
 </span>
+
 
 >>pip install SyloraQ
 >>>Run this so u can use the library. 
