@@ -911,3 +911,108 @@ set retry_count to max_retries
 > **`tts(text,gender)`**
 >> Plays the audio of a `gender (male/female)` saying `text`.
 >> This is a basic `text to speech` so dont expect very much from it. `;)`
+
+> **`Cursor`**
+>> Utility class for managing and editing multiline text with cursor navigation, selection, and undo/redo functionality.
+
+> **`move(direction, steps=1)`** *(Method inside `Cursor`)*
+>> Moves the cursor in the specified direction (`"u"` up, `"d"` down, `"l"` left, `"r"` right) by the given number of steps.
+
+> **`move_to_start_of_line()`** *(Method inside `Cursor`)*
+>> Positions the cursor at the start of the current line.
+
+> **`move_to_end_of_line()`** *(Method inside `Cursor`)*
+>> Positions the cursor at the end of the current line.
+
+> **`goto_start()`** *(Method inside `Cursor`)*
+>> Moves the cursor to the very beginning of the text.
+
+> **`goto_end()`** *(Method inside `Cursor`)*
+>> Moves the cursor to the very end of the text.
+
+> **`goto_line(line_number)`** *(Method inside `Cursor`)*
+>> Moves the cursor to the specified line, keeping the column position if possible.
+
+> **`select_all()`** *(Method inside `Cursor`)*
+>> Selects the entire text from start to end.
+
+> **`hold()`** *(Method inside `Cursor`)*
+>> Starts a text selection at the current cursor position.
+
+> **`release()`** *(Method inside `Cursor`)*
+>> Cancels any active text selection.
+
+> **`undo()`** *(Method inside `Cursor`)*
+>> Reverts the most recent text change.
+
+> **`redo()`** *(Method inside `Cursor`)*
+>> Reapplies an undone change.
+
+> **`trim_trailing_spaces()`** *(Method inside `Cursor`)*
+>> Removes trailing whitespace from every line in the text.
+
+> **`replace_all(old, new)`** *(Method inside `Cursor`)*
+>> Replaces all occurrences of `old` with `new` across all lines.
+
+> **`get_position()`** *(Method inside `Cursor`)*
+>> Returns the current cursor row and column as a tuple.
+
+> **`get_selection_text()`** *(Method inside `Cursor`)*
+>> Retrieves the text currently selected, or an empty string if no selection is active.
+
+> **`copy()`** *(Method inside `Cursor`)*
+>> Copies the selected text into the internal clipboard.
+
+> **`cut()`** *(Method inside `Cursor`)*
+>> Copies the selected text to the clipboard and deletes it from the text.
+
+> **`paste()`** *(Method inside `Cursor`)*
+>> Inserts the clipboard contents at the cursor position.
+
+> **`keyboard`** *(Property of `Cursor`)*
+>> Provides access to an internal `Keyboard` object offering typing and deletion operations.
+
+> **`Keyboard.type(text)`** *(Method inside `Keyboard`)*
+>> Types the provided text at the cursor position, replacing any active selection.
+
+> **`Keyboard.backspace()`** *(Method inside `Keyboard`)*
+>> Deletes the character before the cursor or removes the selection if active.
+
+> **`Keyboard.delete()`** *(Method inside `Keyboard`)*
+>> Deletes the character after the cursor.
+
+> **`Keyboard.enter()`** *(Method inside `Keyboard`)*
+>> Inserts a new line at the cursor position.
+
+> **`Keyboard.delete_selection()`** *(Method inside `Keyboard`)*
+>> Deletes the currently selected text region.
+
+> **`HardCache`**
+>> Utility class for compressing and storing text content in hidden files on the desktop, supporting retrieval and decompression.
+
+> **`create()`** *(Method inside `HardCache`)*
+>> Compresses the content and writes it to a hidden file on the desktop, setting attributes based on the operating system.
+
+> **`read()`** *(Method inside `HardCache`)*
+>> Reveals the cached file, decompresses its content, deletes the file, and returns the text.
+
+> **`info()`** *(Static Method inside `HardCache`)*
+>> Prints a brief description of the class purpose.
+
+> 🛡️ **`CoLine`**
+>> Utility class for encoding and decoding strings arranged in a grid by shifting lines or columns.
+
+> 🛡️i **`encode(input_str, cols, shifttype, line_idx=None, col_idx=None)`** *(Static Method inside `CoLine`)*
+>> Arranges text into a grid of `cols` columns and shifts either a line or a column depending on `shifttype`. Returns the transformed string.
+
+> 🛡️i **`decode(input_str, cols, shifttype, line_idx=None, col_idx=None)`** *(Static Method inside `CoLine`)*
+>> Reverses the transformation applied by `encode`, restoring the original grid arrangement.
+
+> 🛡️ **`ParseShield`**
+>> Utility class for hiding text by inserting invisible Unicode characters and decoding it back.
+
+> 🛡️i **`encode(input_text, expansion_factor=5)`** *(Static Method inside `ParseShield`)*
+>> Inserts random invisible characters after each character in the input, making the text visually unchanged (in console and some editors) but harder to parse.
+
+> 🛡️i **`decode(input_text)`** *(Static Method inside `ParseShield`)*
+>> Removes all invisible characters to restore the original text.
