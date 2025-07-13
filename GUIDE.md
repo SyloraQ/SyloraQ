@@ -1,4 +1,6 @@
-**Your use of this Software in any form constitutes your acceptance of this Agreement.**
+**```
+Your use of this Software in any form constitutes your acceptance of this Agreement.
+```**
 
 >>pip install SyloraQ
 >>>Run this so u can use the library. 
