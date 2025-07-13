@@ -1,85 +1,13 @@
-<span class="neon-scan">
-  Your use of this Software in any form constitutes your acceptance of this Agreement.
-</span>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-.neon-scan {
-  position: relative;
-  display: inline-block;
-  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<span style="
   color: #00ffff;
-  font-weight: 900;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
   text-shadow:
+    0 0 5px #00ffff,
     0 0 10px #00ffff,
-    0 0 20px #00ffff,
-    0 0 30px #00ffff,
-    0 0 40px #00ffff,
-    0 0 50px #00ffff,
-    0 0 70px #00ffff,
-    0 0 90px #00ffff,
-    0 0 110px #00ffff;
-  animation: neonPulse 2s ease-in-out infinite alternate;
-  overflow: hidden;
-}
-
-/* Thinner scan line overlay ON TOP */
-.neon-scan::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 8%; /* Thinner line */
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  transform: skewX(-25deg);
-  animation: scanLine 5s linear infinite;
-  pointer-events: none;
-  z-index: 10;
-  box-shadow: 0 0 8px 2px black;
-}
-
-@keyframes neonPulse {
-  0% {
-    text-shadow:
-      0 0 10px #00ffff,
-      0 0 20px #00ffff,
-      0 0 30px #00ffff,
-      0 0 40px #00ffff,
-      0 0 50px #00ffff,
-      0 0 70px #00ffff,
-      0 0 90px #00ffff,
-      0 0 110px #00ffff;
-    color: #00ffff;
-  }
-  100% {
-    text-shadow:
-      0 0 20px #00ffff,
-      0 0 30px #33ffff,
-      0 0 40px #66ffff,
-      0 0 50px #99ffff,
-      0 0 60px #ccffff,
-      0 0 80px #ccffff,
-      0 0 100px #ccffff,
-      0 0 130px #ccffff;
-    color: #66ffff;
-  }
-}
-
-@keyframes scanLine {
-  0% {
-    left: -30%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-</style>
-
+    0 0 20px #00ffff;
+  font-weight: bold;
+">
+Your use of this Software in any form constitutes your acceptance of this Agreement.
+</span>
 
 >>pip install SyloraQ
 >>>Run this so u can use the library. 
