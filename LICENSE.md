@@ -1,4 +1,3 @@
-
 # SyloraQ Software License Agreement (2025)
 
 ---
@@ -200,5 +199,6 @@ By using the Software, you acknowledge and accept that all data handling and sec
 ---
 
 Your use of this Software in any form constitutes your acceptance of this Agreement.
+This license applies to all versions of this project, including all previously released versions.
 
 © 2025 SyloraQ. All rights reserved.
