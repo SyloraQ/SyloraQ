@@ -713,16 +713,14 @@ The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside fu
 > 🌐 `@endpoint(name)` (Works with `api()`)  
 >> Adds and endpoint to the api server.
 >>> Try out this:
-    ```python
+  ```python
     import time
     def run_api(port=8381):
         @endpoint("hello")
         def hello_endpoint(body, headers):
             name = body.get("input") if isinstance(body, dict) else None
-            if headers.get("Token") == "YourToken":
-                return {"message": f"Hello, {name}!"}
-            else:
-                return {"error": "Sorry, invalid token"}
+            if headers.get("Token") == "YourToken":return {"message": f"Hello, {name}!"}
+            else:return {"error": "Sorry, invalid token"}
 
         api(port=port)
 
@@ -733,7 +731,7 @@ The nested symbols like 🌐i or 🌐i+ indicate layers of insideness (inside fu
             print("Server stopped.")
 
     run_api(8381)
-    ```
+```
 >>> Then run on ur cmd:
     ```bash
     curl -X POST http://localhost:8381/api/hello ^
