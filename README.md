@@ -28,7 +28,7 @@ pip install SyloraQ
 
 ### License
 
-* This project is licensed under the [Private Use License](LICENSE.md).
+* This project is licensed under the [SyloraQ Software License Agreement](LICENSE.md).
 
 ### My YouTube Channel
 
@@ -67,12 +67,12 @@ pip install SyloraQ
 
 # How Do I Suggest?
 
-* Join [Our Discord](https://discord.gg/UMYJrp2B)
-* Suggest your ideas in the **suggestions** channel
+* Join [Our Linkedin](www.linkedin.com/in/syloraq-official)
+* Suggest your ideas freely!
 
 ---
 
 # Getting Help
 
-* Join the Discord server
-* Report problems in the **help** or **bugs** channels
+* Join the Linkedin server
+* Report problems u experienced!
